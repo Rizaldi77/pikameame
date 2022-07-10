@@ -105,7 +105,7 @@
           <div class="icon-box icon-box-orange">
             <img src="../assets/img/Profil/reseler.png" class="img-fluid" alt="">
             <div class="icon"></div>
-            <h4 class="title"><a href="{{route('dash')}}">Admin Reseller</a></h4>
+            <h4 class="title"><a href="">Admin Reseller</a></h4>
           </div>
         </div>
       </div>
