@@ -89,7 +89,7 @@
           <div class="icon-box icon-box-orange">
             <img src="../assets/img/Profil/catalog.png" class="img-fluid" alt="">
             <div class="icon"></div>
-            <h1 class="title"><a href="">Admin Produk</a></h1>
+            <h1 class="title"><a href="{{route('dash')}}">Admin Produk</a></h1>
           </div>
         </div>
 
