@@ -89,7 +89,7 @@
           <div class="icon-box icon-box-orange">
             <img src="../assets/img/Profil/catalog.png" class="img-fluid" alt="">
             <div class="icon"></div>
-            <h1 class="title"><a href="{{route('dash')}}">Admin Produk</a></h1>
+            <h1 class="title"><a href="">Admin Produk</a></h1>
           </div>
         </div>
 
@@ -97,7 +97,7 @@
           <div class="icon-box icon-box-orange">
             <img src="../assets/img/Profil/akunt.png" class="img-fluid" alt="">
             <div class="icon"></div>
-            <h4 class="title"><a href="{{route('dash')}}">Admin Artikel</a></h4>
+            <h4 class="title"><a href="">Admin Artikel</a></h4>
           </div>
         </div>
 
@@ -105,7 +105,7 @@
           <div class="icon-box icon-box-orange">
             <img src="../assets/img/Profil/reseler.png" class="img-fluid" alt="">
             <div class="icon"></div>
-            <h4 class="title"><a href="{{route('dash')}}">Admin Reseller</a></h4>
+            <h4 class="title"><a href="">Admin Reseller</a></h4>
           </div>
         </div>
       </div>
