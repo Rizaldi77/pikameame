@@ -68,22 +68,16 @@
   <section class="product" data-aos="fade-up" data-aos-easing="ease-in-out" date-aos-delay="200">
     <div class="container">
       <div class="section-title">
-        <h2>Produk Kami</h2>
+        <h2>Daftar Produk</h2>
         <div class="row">
-          <div class="col-lg-12">
-            <ul id="portfolio-flters">
-              <li data-filter="*" class="filter-active">All</li>
-              <li data-filter=".filter-app">App</li>
-              <li data-filter=".filter-card">Card</li>
-              <li data-filter=".filter-web">Web</li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-lg-12">
+        <div class="col-lg-7">
           <form action="" method="post">
             <input type="email" name="email" placeholder="Cari Apa Saja"><input type="submit" value="Search">
           </form>
         </div>
+        <div class=" col-lg-4 offset-lg-1 read-more">
+            <a href="{{route('daftaragen')}}">Isi Formulir Disini</a>
+          </div>
       </div>
 
       <div class="row">
@@ -93,7 +87,14 @@
             <img src="../assets/img/Profil/WhatsApp Image 2022-06-23 at 04.09.37.jpeg" class="img-fluid" alt="">
             <div class="icon"></div>
             <h4 class="title"><a href="{{route('detailproduct')}}">Magni Dolores</a></h4>
-            <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+            <div class="row">
+                <div class="col-auto">
+                    <button>Edit</button>
+                </div>
+                <div class="col-auto">
+                    <button>Delete</button>
+                </div>
+            </div>
           </div>
         </div>
 

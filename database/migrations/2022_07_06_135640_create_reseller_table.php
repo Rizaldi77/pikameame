@@ -15,12 +15,13 @@ class CreateResellerTable extends Migration
     {
         Schema::create('reseller', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('admin_id');
+            $table->foreignId('admin_id')->nullable();
             $table->string('nama_lengkap',255);
             $table->string('no_hp',15);
             $table->text('domisili');
             $table->string('akun_ig',255);
             $table->string('email',255);
+            $table->string('keterangan');
             $table->timestamps();
         });
     }

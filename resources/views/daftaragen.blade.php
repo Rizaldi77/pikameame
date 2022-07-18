@@ -85,29 +85,30 @@
     <section class="desc-daftar" data-aos="fade-up" data-aos-easing="ease-in-out" date-aos-delay="200">
         <div class="container">
             <div class="col-lg-12">
-                <form>
+                <form action="{{route('daftar')}}" method="post">
+                  {{ csrf_field() }}
                     <div class="form-group">
-                        <label for="InputNamaPengguna">Nama Pengguna</label>
-                        <input type="text" class="form-control shadow-none" id="InputNamaPengguna">
+                        <label for="InputNamaLengkap">Nama Lengkap</label>
+                        <input type="text" class="form-control shadow-none" name="nama_lengkap" id="InputNamaLengkap" required="required">
                     </div>
                     <div class="form-group">
                         <label for="InputNoTlp">No. Telepon</label>
-                        <input type="text" class="form-control shadow-none" id="InputNoTlp">
+                        <input type="number" class="form-control shadow-none" name="no_hp" id="InputNoTlp" required="required">
                     </div>
                     <div class="form-group">
-                        <label for="Domisili">Alamat Domisili</label>
-                        <input type="text" class="form-control shadow-none" id="Domisili">
+                        <label for="InputDomisili">Alamat Domisili</label>
+                        <input type="text" class="form-control shadow-none" name="domisili" id="InputDomisili" required="required">
                     </div>
                     <div class="form-group">
-                        <label for="AkunIg">Akun Instagram</label>
-                        <input type="text" class="form-control shadow-none" id="AkunIg">
+                        <label for="InputAkunIg">Akun Instagram</label>
+                        <input type="text" class="form-control shadow-none" name="akun_ig" id="InputAkunIg" required="required">
                     </div>
                     <div class="form-group">
-                        <label for="Email">Email</label>
-                        <input type="email" class="form-control shadow-none" id="Email">
+                        <label for="InputEmail">Email</label>
+                        <input type="email" class="form-control shadow-none" name="email" id="InputEmail" required="required">
                     </div>
                     <div class="read-more">
-                        <a href="#">Daftar</a>
+                      <input type="submit" value="Daftar">
                     </div>
                 </form>
             </div>

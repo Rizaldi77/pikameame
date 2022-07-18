@@ -1433,6 +1433,9 @@ section {
     border-bottom: 2px solid #fff;
     font-family: "Roboto", sans-serif;
 }
+.product input {
+    outline: 0;
+}
 
 .product #portfolio-flters li:hover,
 .product #portfolio-flters li.filter-active {
@@ -1594,8 +1597,6 @@ section {
 .product form {
     margin-top: 10px;
     background: #fff;
-    margin-left: auto;
-    margin-right: auto;
     padding: 6px 10px;
     margin-bottom: 30px;
     position: relative;
@@ -1699,6 +1700,31 @@ section {
     border-radius: 35px;
 }
 
+.product .read-more a {
+    margin-top: 10px;
+    font-size: 20px;
+    display: inline-block;
+    background: #F36E01;
+    color: #fff;
+    padding: 8px 40px;
+    transition: 0.3s;
+    border-radius: 25px;
+}
+
+.product button {
+    margin-top: 10px;
+    font-size: 20px;
+    display: inline-block;
+    background: #F36E01;
+    color: #fff;
+    padding: 8px 40px;
+    transition: 0.3s;
+    border-radius: 25px;
+}
+
+.product .read-more button:hover {
+    background: #ff831e;
+}
 
 .product .icon-box-orange:hover {
     border-color: #F56E01;
@@ -1848,7 +1874,7 @@ section {
     width: 100%;
 }
 
-.desc-daftar .read-more a {
+.desc-daftar .read-more input {
     margin-top: 20px;
     font-size: 20px;
     display: inline-block;
@@ -1859,7 +1885,7 @@ section {
     border-radius: 25px;
 }
 
-.desc-daftar .read-more a:hover {
+.desc-daftar .read-more input:hover {
     background: #ff831e;
 }
 
@@ -1956,6 +1982,21 @@ section {
 
 .desc-login input:focus {
     border-color: #ff831e;
+}
+
+.desc-login .read-more input {
+    margin-top: 20px;
+    font-size: 20px;
+    display: inline-block;
+    background: #F36E01;
+    color: #fff;
+    padding: 10px 40px;
+    transition: 0.3s;
+    border-radius: 25px;
+}
+
+.desc-login .read-more input:hover {
+    background: #ff831e;
 }
 
 .exam-agen .icon-box {
