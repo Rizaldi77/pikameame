@@ -38,7 +38,7 @@
 </head>
 
 <body>
-    
+
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top d-flex align-items-center header-transparent">
     <div class="container d-flex justify-content-between align-items-center">
@@ -69,15 +69,16 @@
     <div class="container">
       <div class="section-title">
         <h2>Daftar Produk</h2>
-        <div class="row">
-        <div class="col-lg-7">
-          <form action="" method="post">
-            <input type="email" name="email" placeholder="Cari Apa Saja"><input type="submit" value="Search">
-          </form>
+        <div class="d-flex justify-content-between">
+            <div>
+                <form action="" method="post">
+                    <input type="email" name="email" placeholder="Cari Apa Saja"><input type="submit" value="Search">
+                </form>
+            </div>
+            <div class="read-more">
+                <a href="{{route('daftaragen')}}"><i class="fa-solid fa-plus"></i> Tambah Produk</a>
+            </div>
         </div>
-        <div class=" col-lg-4 offset-lg-1 read-more">
-            <a href="{{route('daftaragen')}}">Isi Formulir Disini</a>
-          </div>
       </div>
 
       <div class="row">
@@ -87,12 +88,12 @@
             <img src="../assets/img/Profil/WhatsApp Image 2022-06-23 at 04.09.37.jpeg" class="img-fluid" alt="">
             <div class="icon"></div>
             <h4 class="title"><a href="{{route('detailproduct')}}">Magni Dolores</a></h4>
-            <div class="row">
-                <div class="col-auto">
-                    <button>Edit</button>
+            <div class="align-self-end my-2 mx-1 row">
+                <div class="col-6">
+                    <button class="edit">Edit</button>
                 </div>
-                <div class="col-auto">
-                    <button>Delete</button>
+                <div class="col-6">
+                    <button class="delete">Delete</button>
                 </div>
             </div>
           </div>
@@ -103,7 +104,14 @@
             <img src="../assets/img/Profil/WhatsApp Image 2022-06-23 at 04.09.37.jpeg" class="img-fluid" alt="">
             <div class="icon"></div>
             <h4 class="title"><a href="">Magni Dolores</a></h4>
-            <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+            <div class="align-self-end my-2 mx-1 row">
+                <div class="col-6">
+                    <button class="edit">Edit</button>
+                </div>
+                <div class="col-6">
+                    <button class="delete">Delete</button>
+                </div>
+            </div>
           </div>
         </div>
 
@@ -112,7 +120,14 @@
             <img src="../assets/img/Profil/WhatsApp Image 2022-06-23 at 04.09.37.jpeg" class="img-fluid" alt="">
             <div class="icon"></div>
             <h4 class="title"><a href="">Nemo Enim</a></h4>
-            <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p>
+            <div class="align-self-end my-2 mx-1 row">
+                <div class="col-6">
+                    <button class="edit">Edit</button>
+                </div>
+                <div class="col-6">
+                    <button class="delete">Delete</button>
+                </div>
+            </div>
           </div>
         </div>
       </div>
@@ -184,7 +199,7 @@
           <li><a href="#">3</a></li>
         </ul>
       </div>
-      
+
     </div>
   </section>
 
