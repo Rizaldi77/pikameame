@@ -86,21 +86,23 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-8">
-            <form>
+            @if(session('error'))
+            <div class="alert alert-danger">
+                <b>Opps!</b> {{session('error')}}
+            </div>
+            @endif
+            <form action="{{ route('actionlogin') }}" method="post">
+              @csrf
                 <div class="form-group">
                     <label for="InputNamaPengguna">Nama Pengguna</label>
-                    <input type="text" class="form-control shadow-none" id="InputNamaPengguna">
-                </div>
-                <div class="form-group">
-                    <label for="InputNoTlp">No. Telepon</label>
-                    <input type="text" class="form-control shadow-none" id="InputNoTlp">
+                    <input type="text" class="form-control shadow-none" name="username" id="InputNamaPengguna" required="required">
                 </div>
                 <div class="form-group">
                     <label for="Password">Password</label>
-                    <input type="password" class="form-control shadow-none" id="Password">
+                    <input type="password" class="form-control shadow-none" name="username" id="Password" required="required">
                 </div>
                 <div class="read-more">
-                    <a href="{{route('dash')}}">Login</a>
+                  <input type="submit" value="Login">
                 </div>
             </form>
           </div>

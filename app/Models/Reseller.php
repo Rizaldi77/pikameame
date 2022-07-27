@@ -15,6 +15,7 @@ class Reseller extends Model
         'no_hp',
         'domisili',
         'akun_ig',
-        'email'
+        'email',
+        'keterangan'
     ];
 }
