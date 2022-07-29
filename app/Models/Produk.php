@@ -18,10 +18,6 @@ class Produk extends Model
         'jml_jual'
     ];
 
-    public function list_foto(): HasMany
-    {
-        return $this->hasMany(Team::class, 'id', 'produk_id');
-    }
     public function list_varian(): HasMany
     {
         return $this->hasMany(Team::class, 'id', 'produk_id');

@@ -10,7 +10,12 @@ class List_foto extends Model
     protected $table = "list_foto";
     protected $fillable = [
         'id',
-        'produk_id',
+        'varian_id',
         'nama_foto'
     ];
+
+    public function list_varian()
+    {
+        return $this->beLongsTo('App\Models\list_varian');
+    }
 }
