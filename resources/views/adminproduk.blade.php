@@ -250,7 +250,7 @@
             </div>
             <div class="form-group">
               <label for="">Foto</label>
-              <input type="file" class="form-control" id="foto" name="foto[{{$count}}]" multiple>
+              <input type="file" class="form-control" id="foto" name="foto[{{$count}}][]" multiple>
             </div>
           </div>
           <?php $count++; ?>
