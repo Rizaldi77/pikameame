@@ -76,7 +76,8 @@
                 </form>
             </div>
             <div class="read-more">
-                <a href="{{route('daftaragen')}}"><i class="fa-solid fa-plus"></i> Tambah Produk</a>
+                <button data-toggle="modal" data-target="#ModalTambahProduk" ><i class="fa-solid fa-plus"></i> Tambah Produk</button>
+                
             </div>
         </div>
       </div>
@@ -201,9 +202,83 @@
       </div>
 
     </div>
+    
   </section>
 
+  
+
 </main>
+<div class="modal fade" id="ModalTambahProduk" tabindex="-1" aria-labelledby="ModalTambahProduk" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Tambah Produk</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+      <!--FORM TAMBAH PRODUK-->
+        <form action="{{route('tambahproduk')}}" method="post" enctype="multipart/form-data">
+          {{ csrf_field() }}
+          <div class="form-group">
+            <label for="">Nama Produk</label>
+            <input type="text" class="form-control" id="addNama" name="addNama" aria-describedby="emailHelp">
+          </div>
+          <div class="form-group">
+            <label for="">Deskripsi Produk</label>
+            <textarea class="form-control" id="deskripsi" name="deskripsi"></textarea>
+          </div>
+         <div class="form-group">
+              <label for="">Jumlah jual</label>
+              <input type="text" class="form-control" id="jml_jual" name="jml_jual">
+            </div>
+          <div class="form-varian">
+            <div class="form-group">
+              <h4>Varian 1</h4>
+            </div>
+            <?php 
+            $count=1;
+            ;?>
+            <div class="form-group">
+              <label for="">Nama Varian</label>
+              <input type="text" class="form-control" id="namaVarian" name="namaVarian[{{$count}}]">
+            </div>
+            <div class="form-group">
+              <label for="">Harga</label>
+              <input type="text" class="form-control" id="harga" name="harga[{{$count}}]">
+            </div>
+            <div class="form-group">
+              <label for="">Foto</label>
+              <input type="file" class="form-control" id="foto" name="foto[{{$count}}][]" multiple>
+            </div>
+          </div>
+          <?php $count++; ?>
+          <div class="form-varian">
+            <div class="form-group">
+              <h4>Varian 2</h4>
+            </div>
+            <div class="form-group">
+              <label for="">Nama Varian</label>
+              <input type="text" class="form-control" id="namaVarian" name="namaVarian[{{$count}}]">
+            </div>
+            <div class="form-group">
+              <label for="">Harga</label>
+              <input type="text" class="form-control" id="harga" name="harga[{{$count}}]">
+            </div>
+            <div class="form-group">
+              <label for="">Foto</label>
+              <input type="file" class="form-control" id="foto" name="foto[{{$count}}][]" multiple>
+            </div>
+          </div>
+          
+          <button type="submit" class="btn btn-primary">Simpan Data</button>
+        </form>
+        <!--END FORM TAMBAH BARANG-->
+      </div>
+    </div>
+  </div>
+</div>
 
 <!-- ======= Footer ======= -->
 <footer id="footer" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="500">
@@ -239,7 +314,8 @@
  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
  <script src="assets/vendor/php-email-form/validate.js"></script>
-
+ <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
  <!-- Template Main JS File -->
  <script src="assets/js/main.js"></script>
 

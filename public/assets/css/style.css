@@ -1700,7 +1700,7 @@ section {
     border-radius: 35px;
 }
 
-.product .read-more a {
+.product .read-more button {
     margin-top: 10px;
     font-size: 20px;
     display: inline-block;
@@ -1708,7 +1708,12 @@ section {
     color: #fff;
     padding: 8px 30px;
     transition: 0.3s;
+    border: none;
     border-radius: 25px;
+}
+
+.product .read-more button:hover {
+    background: #f5872d;
 }
 
 .product button {

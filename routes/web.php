@@ -34,6 +34,7 @@ Route::get('/dash', 'App\Http\Controllers\DashboardController@dashboard')->name(
 Auth::routes();
 
 Route::get('/admin-produk', 'App\Http\Controllers\AdminController@dataproduk')->name('adminproduk');
+Route::post('/tambah-produk', 'App\Http\Controllers\AdminController@tambahproduk')->name('tambahproduk');
 Route::get('/admin-artikel', 'App\Http\Controllers\DashboardController@dashboard')->name('adminartikel');
 
 

@@ -15,7 +15,7 @@ class CreateListFotoTable extends Migration
     {
         Schema::create('list_foto', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('produk_id');
+            $table->foreignId('varian_id');
             $table->string('nama_foto');
             $table->timestamps();
         });
